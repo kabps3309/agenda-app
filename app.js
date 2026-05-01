@@ -3,7 +3,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbz5KSoaxZcPcPcYx9ruW13v
 async function loadData() {
   const res = await fetch(API_URL + "?action=api_get");
   const data = await res.json();
-
+  alert(data);
   const tbody = document.querySelector("#table tbody");
   tbody.innerHTML = "";
 
